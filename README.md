@@ -48,3 +48,8 @@ O objetivo é ensinar a manipulação do **DOM (Document Object Model)** utiliza
 🔗 [MDN Web Docs – JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)  
 🔗 [MDN Web Docs – Document Object Model (DOM)](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)  
 🔗 [ECMAScript 6+ (ES6+) – Novidades do JavaScript Moderno](https://es6.io/)
+
+---
+
+## 🤝 **Dúvidas?**
+Caso tenha dúvidas, entre em contato pelo **Discord** ou pelo e-mail do professor. Boa prática e divirta-se! 🚀
