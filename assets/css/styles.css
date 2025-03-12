@@ -1,0 +1,221 @@
+:root {
+  --primary-bg-color: #ff975a;
+  --secondary-bg-color: #fc6765;
+  --text-color: #3e3e3e;
+  --font-family: "Poppins", Arial, sans-serif;
+
+  --primary-button-color: #ff975a;
+  --primary-button-bg-color: #fff3db;
+
+  --secondary-button-color: #fff;
+  --secondary-button-bg-color: #335bf1;
+
+  --primary-button-remove-bg-color: #f13333;
+}
+ 
+[data-theme=dark] {    
+  --primary-bg-color: #241841;
+  --secondary-bg-color: #050709;
+
+  --primary-button-color: #fff;
+  --primary-button-bg-color: #844ef3;
+
+  --secondary-button-color: #fff;
+  --secondary-button-bg-color: #8cc63e;
+}
+
+/*-----------------------------*/
+/*	Main Structure
+/*-----------------------------*/
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--primary-button-color);
+  outline: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+/*-----------------------------*/
+/*	HOME
+/*-----------------------------*/
+.home {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to top, var(--primary-bg-color) 0%, var(--secondary-bg-color) 100%);
+}
+
+.home .home-content h1 {
+  color: var(--primary-button-bg-color);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.home .home-image {
+  padding-top: 130px;
+  -webkit-transform: translateX(-25px);
+  -moz-transform: translateX(-25px);
+  -o-transform: translateX(-25px);
+  -ms-transform: translateX(-25px);
+  transform: translateX(-25px);
+  position: relative;
+  z-index: 1;
+}
+
+/*-----------------------------*/
+/*	DISPLAY-TABLE-CELL
+/*-----------------------------*/
+.display-table {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
+.display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh;
+  min-height: 100%;
+}
+
+/*-----------------------------*/
+/*	BUTTONS
+/*-----------------------------*/
+.buttons .btn {
+  width: 100%;
+  margin: 1rem 0;
+  margin-right: 2rem;
+}
+
+.btn {
+  color: var(--primary-button-color);
+  font-size: 0.65rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 7px;
+  border: 1px solid var(--primary-button-bg-color);
+  border-radius: 5px;
+  min-width: 20px;
+  text-align: center;
+  background: var(--primary-button-bg-color);
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+}
+
+.btn-2 {
+  color: var(--secondary-button-color);
+  background: rgba(255, 255, 255, 0.01);
+  border-color: var(--primary-button-bg-color);
+}
+
+.btn:hover {
+  color: var(--secondary-button-color);
+  border-color: var(--secondary-button-bg-color);
+  background: var(--secondary-button-bg-color);
+}
+
+.btn-remove {
+  color: var(--secondary-button-color);
+  background: rgba(255, 255, 255, 0.01);
+  border-color: var(--primary-button-bg-color);
+}
+
+.btn-remove:hover {
+  color: var(--secondary-button-color);
+  border-color: var(--primary-button-remove-bg-color);
+  background: var(--primary-button-remove-bg-color);
+}
+
+/*-----------------------------*/
+/*	WRITE INPUT
+/*-----------------------------*/
+#write, 
+#write:focus,
+#write:focus-visible {
+  color: var(--primary-button-bg-color);
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  line-height: 1.2;
+  background: none;
+  border: 0;
+  width: 100%;
+  outline: none;
+  border-bottom: 1px solid #fff;
+}
+
+/*-----------------------------*/
+/*	HELPERS
+/*-----------------------------*/
+.destacado {
+  font-weight: bold !important;
+  color: var(--secondary-button-bg-color) !important;
+}
+
+.oculto {
+  display: none;
+}
+
+/*-----------------------------*/
+/*	PARTICLES
+/*-----------------------------*/
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+/*-----------------------------*/
+/*	EFFECTS
+/*-----------------------------*/
+.up-down {
+  animation: up-down 2s infinite;
+}
+
+@keyframes up-down {
+  0% {
+      transform: translateY(8px);
+  }
+  50% {
+      transform: translateY(-8px);
+  }
+  100% {
+      transform: translateY(8px);
+  }
+}
+
+/*-----------------------------*/
+/*	MEDIA QUERIES
+/*-----------------------------*/
+@media screen and (min-width: 768px) {
+  .home .home-content h1 {
+    font-size: 60px;
+  }
+
+  .btn {
+    font-size: 0.75rem;    
+    min-width: 50px;
+  }  
+}
+
+@media screen and (min-width: 1200px) {
+  .btn {
+    font-size: 0.85rem;
+    padding: 15px 15px 14px;
+  }  
+}

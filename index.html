@@ -4,19 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Manipulando o DOM</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap 5.3.3 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800">
+
+    <!-- Font Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Interagindo com JavaScript!</h1>
-    <p id="texto">Este texto será modificado.</p>
+        <section class="home" id="home">
+          <div id="particles-js"></div>
+          <div class="container">
+            <div class="row">
+              <div class="home-content display-table">
+                <div class="display-table-cell">                  
+                  <div class="d-flex flex-column">                    
+                    <div id="container-text" class="mx-auto">
+                      <h1>Este texto será modificado.<a class="btn btn-remove"><i class="bi bi-trash"></i></a></h1>
+                    </div>
+                    <div id="write-box" class="mx-auto">
+                      <input type="text" name="write" id="write">
+                   </div>
+                    <div class="row buttons">
+                      <div class="col-sm-4 col-md-2" ><a class="btn btn-2" id="btnTrocarTexto"><i class="bi bi-type me-2"></i>Chante Text</a></div>
+                      <div class="col-sm-4 col-md-2 col-md-push-2" ><a class="btn btn-2" id="btnMudarCor"><i class="bi bi-palette me-2"></i>Change Color</a></div>
+                      <div class="col-sm-4 col-md-2 col-md-push-6" ><a class="btn btn-2" id="btnToggle"><i class="bi bi-eye me-2"></i>Show</a></div>
+                      <div class="col-sm-4 col-md-2 col-md-pull-4" ><a class="btn btn-2" id="btnAdicionar"><i class="bi bi-plus-circle me-2"></i>Add Element</a></div>
+                      <div class="col-sm-4 col-md-2 col-md-pull-4" ><a class="btn btn-2" id="btnTheme"><i class="bi bi-brightness-high me-2" id="btnThemeIcon"></i>Light</a></div>
+                      <div class="col-sm-4 col-md-2" ><a class="btn btn-2" id="btnWrite"><i class="bi bi-pen me-2"></i>Write</a></div>
+                    </div>
+                  </div>                 
 
-    <button id="btnTrocarTexto">Trocar Texto</button>
-    <button id="btnMudarCor">Mudar Cor</button>
-    <button id="btnToggle">Esconder/Mostrar</button>
-    <button id="btnAdicionar">Adicionar Elemento</button>
+                </div>
+               </div>   
+            </div>
+          </div>
+        </section>
+    <div ></div>  
 
-    <div id="container"></div>
+    <!-- Particles -->
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/particles.js"></script>
 
-    <script src="script.js" defer></script>
+    <!-- Custom Js -->
+    <script src="assets/js/script.js" defer></script>
   </body>
 </html>
